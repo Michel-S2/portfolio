@@ -1,0 +1,260 @@
+header {
+    display: flex;
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    
+
+    & .container {
+        padding: 0px 21px;
+        max-width: var(--largura-padrao);
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        
+
+        & .home {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            & img {
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+            }
+            & h2 {
+                cursor: pointer;
+
+                & .span {
+                    font-size: 30px;
+                    font-family: monospace;
+
+                }
+
+                & span {
+                    color: var(--cor-principal);
+                }
+            }
+        }
+
+        & .home:hover {
+            transform: scale(1.1);
+        }
+
+        & .nav-menu-desk {
+            
+            height: 100%;
+            align-items: center;
+            gap: 30px;
+            display: flex;
+            font-family: var(--font-principal);
+
+            & .btn-abrir {
+                display: none;
+
+                & .hamburguer-icon {
+                    color: white;
+                    height: 30px;
+                }
+            }
+
+            & .menu-mobile {
+                background-color: black;
+                width: 0%;
+                top: 0;
+                right: 0;
+                position: fixed;
+                height: 100vh;
+                z-index: 500;
+                transition: .5s;
+
+                & div .btn-fechar {
+                    color: white;
+                    padding: 10px;
+                    height: 30px;
+                }
+
+                & .nav-menu-mobile {
+                   
+
+                    & .menu {
+                        text-align: right;
+
+                        & li {
+                            
+                            
+
+                            & a {
+                                font-size: 20px;
+                                font-weight: 300px;
+                                padding: 30px 10%;
+                                display: block;
+                            }
+
+                            & a:hover {
+                                background-color: var(--cor-principal);;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+
+            & .overlay {
+                width: 200%;
+                height: 200vh;
+                top: 0;
+                left: 0;
+                transform: translate(-50%, -50%);
+                position: fixed;
+                background-color: #29282960;
+                z-index: 400;
+                display: none;
+            }
+
+            & .lista-navegacao {
+                list-style: none;
+                display: flex;
+                gap: 30px;
+                justify-content: flex-end;
+                height: 100%;
+                font-size: 1.2em;
+                align-items: center;
+                
+
+                & li {
+                    cursor: pointer;
+
+
+                    & a {
+                        position: relative;
+                    }
+
+                    & a::after {
+                        content: '';
+                        width: 0%;
+                        background-color: rgba(127, 44, 206, 0.863);
+                        height: 3px;
+                        position: absolute;
+                        bottom: -3px;
+                        left: 0;
+                        transition: .4s ease-in-out;
+                    }
+
+                    & a:hover::after {
+                        width: 100%;
+                    }
+                }
+
+                & li:hover {
+                    color:rgba(127, 44, 206, 0.863);
+                }
+            }
+
+            & .checkbox {
+                opacity: 0;
+                position: absolute;
+            }
+
+            & .checkbox:checked + label .ball {
+                transform: translateX(24px);
+            }
+
+            & label {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                border-radius: 50px;
+                padding: 5px;
+                height: 25px;
+                width: 50px;
+                position: relative;
+                transform: scale(1.5);
+                background-color: #ccc;
+
+                & .sunIcon {
+                    color: #6b0280;
+                    width:17px;
+                    stroke-width:1px ;
+                }
+
+                & .moonIcon {
+                    color: #6b0280;
+                    width: 15px;
+            
+                }
+
+                & .ball {
+                    background-color: black;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    height: 22px;
+                    width: 22px;
+                    transform: translateX(0px);
+                    transition: transform 0.2s linear;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    header {
+
+        .container {
+            padding: 0px 5px;
+
+            & .home {
+                
+            }
+
+            & .nav-menu-desk {
+                width: 130px;
+            }
+        }
+
+    }
+    
+
+    .btn-abrir {
+        display: block !important;
+
+    }
+
+    .menu-mobile.mostrar {
+        width: 60% !important;
+    }
+
+    .overlay.on {
+        display: block !important;
+    }
+    
+
+   .lista-navegacao {
+        display: none !important;
+        
+    }
+}
+
+@media (max-width: 570px) {
+    header {
+
+        .container {
+            
+
+            & .home {
+                width: 200px;
+            }
+
+            & .nav-menu-desk {
+                
+            }
+        }
+
+    }
+}

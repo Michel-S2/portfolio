@@ -1,0 +1,104 @@
+.container-sobre {
+    height: 150vh;
+    padding: 50px 15px;
+    /* margin-top: 30px; */
+    background-color: var(--second-bg-color);
+
+    & .sobre {
+        text-align: center;
+        font-size: 2.5em;
+        padding: 100px 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    & .section-sobre {
+        max-width: var(--largura-padrao);
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 40px;
+
+        & .imagem-michel {
+            background-color: var(--cor-principal);
+            display: flex;
+            background-image: url("/images/mic.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 0 25px var(--cor-principal);
+            background-size: cover;
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
+            justify-content: flex-end;
+            transition: .4s ease-in-out;
+            cursor: pointer;
+            
+        }
+
+        & .imagem-michel:hover {
+            box-shadow: 0 0 25px var(--cor-principal);
+            box-shadow: 0 0 50px var(--cor-principal);
+            box-shadow: 0 0 100px var(--cor-principal);
+        }
+
+        & article {
+            width: 50%;
+
+            & p {
+                line-height: 24px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-bottom: 40px;
+                font-size: 20px;
+
+                & span {
+                    color: var(--cor-principal);
+                    border-bottom: 2px solid var(--cor-principal);
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .container-sobre {
+        
+    
+        & h2 {
+            
+    
+        }
+    
+        & .section-sobre {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            & div {
+                max-width: 350px;
+                width: 100%;
+    
+                & img {
+                    
+                    
+                }
+                
+            }
+            & article {
+                width: 100%;
+    
+                & p {
+                    
+    
+                    & span {
+                        
+                    }
+                }
+            }
+        }
+    }
+}
