@@ -3,8 +3,10 @@ import "./Projetos.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPen, faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Animacao } from './Animacao';
 
 export const Projetos = () => {
+    const ref = Animacao('hidden', 'fade-in');
 
     const handleClick = () => {
         window.open('https://michel-s2.github.io/Rinha-de-Pokemom/', '_blank');
@@ -13,7 +15,7 @@ export const Projetos = () => {
     return (
         <section className="projeto-section">
             <div className="container-projetos">
-                <h2><span><FontAwesomeIcon icon={faPen} className="icon-pen"/></span> Projetos</h2>
+                <h2 ref={ref} className="hidden"><span><FontAwesomeIcon icon={faPen} className="icon-pen"/></span> Projetos</h2>
                 <section className="projeto-area">
                     <div className="content-projeto">
                         <div onClick={handleClick} className="projeto-thumb"></div>

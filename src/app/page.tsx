@@ -8,6 +8,7 @@ import { faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Education } from "@/components/Education";
 import { Projetos } from "@/components/Projetos";
+import { Contato } from "@/components/Contato";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Sobre/>
       <Education/>
       <Projetos/>
+      <Contato/>
     </div>
   )
 }
