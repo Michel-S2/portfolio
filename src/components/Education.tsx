@@ -1,7 +1,8 @@
 "use client"
+import "./Education.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
-import "./Education.css"
+
 import { Animacao } from './Animacao';
 
 export const Education = () => {

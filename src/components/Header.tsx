@@ -45,11 +45,11 @@ export const Header = () => {
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                     {/* <input type="checkbox" id="check" className="checkbox"/> */}
-                    <label htmlFor="check">
+                    {/* <label htmlFor="check">
                         <FontAwesomeIcon icon={faMoon} className="moonIcon"/>
                         <FontAwesomeIcon icon={faSun} className="sunIcon"/>
                         <div className="ball"></div>
-                    </label>
+                    </label> */}
                 </nav>
             </div>
         </header>

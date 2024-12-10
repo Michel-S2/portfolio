@@ -1,7 +1,8 @@
 'use client'
-import { Animacao } from "./Animacao"
 import "./Sobre.css"
 import "./Animacao.css"
+import { Animacao } from "./Animacao"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMedal } from '@fortawesome/free-solid-svg-icons';
 

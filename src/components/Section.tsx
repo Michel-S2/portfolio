@@ -1,5 +1,4 @@
 import "./Section.css";
-import { TextTyper } from "./TextTyper";
 import { TypingEffect } from "./TypingEffect";
 import TypeIt from "typeit";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

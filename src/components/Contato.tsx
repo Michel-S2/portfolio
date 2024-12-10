@@ -55,7 +55,7 @@ export const Contato = () => {
                         </div>
                         <label htmlFor="input-email">Email</label>
                         <div>
-                            <span className="span-icon"><FontAwesomeIcon icon={faEnvelope} className="span-icon-eamil"/></span>
+                            <span className="span-icon"><FontAwesomeIcon icon={faEnvelope} className="span-icon-email"/></span>
                             <input type="email" name="email" className="email-contato" id="input-email" placeholder="Digite seu e-mail" required/>
                         </div>
                         <label htmlFor="input-message">Mensagem</label>
