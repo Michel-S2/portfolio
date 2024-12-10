@@ -33,12 +33,12 @@ export const Contato = () => {
                                 </a>
                             </li>
                             <li className="rede-social">
-                                <a href="">
+                                <a href="https://wa.me/05551997361207?text=Ol%C3%A1%2C%20tudo%20bem%3F" target="_blank">
                                 <FontAwesomeIcon icon={faWhatsapp} className="contato wpp"/>
                                 </a>
                             </li>
                             <li className="rede-social">
-                                <a href="">
+                                <a href="https://www.instagram.com/michelonly/" target="_blank">
                                 <FontAwesomeIcon icon={faInstagram} className="contato i"/>
                                 </a>
                             </li>

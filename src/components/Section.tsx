@@ -23,12 +23,12 @@ export const Section = () => {
                         </a>
                     </li>
                     <li className="lista-section">
-                        <a className="a"  href="">
+                        <a className="a"  href="https://github.com/Michel-S2" target="_blank">
                             <FontAwesomeIcon icon={faGithub}className="github-icon"/>
                         </a>
                     </li>
                     <li className="lista-section">
-                        <a className="a"  href="">
+                        <a className="a"  href="https://www.instagram.com/michelonly/" target="_blank">
                             <FontAwesomeIcon icon={faInstagram}className="insta-icon"/>
                         </a>
                     </li>

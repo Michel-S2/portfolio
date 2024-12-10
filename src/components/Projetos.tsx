@@ -63,10 +63,10 @@ export const Projetos = () => {
                                 </div>
                                 <div className="projeto-button">
                                     <button>
-                                        <a href={`${item.deploy}`} target="_blank">Git Hub <span><FontAwesomeIcon icon={faGithub} className="projeto-icon-git"/></span></a>
+                                        <a className="button-tag-a" href={`${item.deploy}`} target="_blank">Git Hub <span><FontAwesomeIcon icon={faGithub} className="projeto-icon-git"/></span></a>
                                     </button>
                                     <button>
-                                        <a href={`${item.projeto}`} target="_blank">Projeto <span><FontAwesomeIcon icon={faArrowAltCircleRight} className="projeto-icon-arrow"/></span></a>
+                                        <a className="button-tag-a" href={`${item.projeto}`} target="_blank">Projeto <span><FontAwesomeIcon icon={faArrowAltCircleRight} className="projeto-icon-arrow"/></span></a>
                                     </button>
                                 </div>
                             </div>

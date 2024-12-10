@@ -96,6 +96,11 @@
     gap: 20px;
 }
 
+.button-tag-a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .projeto-info .projeto-button button {
     padding: 10px 20px;
     font-size: 17px;
