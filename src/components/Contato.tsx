@@ -10,8 +10,8 @@ export const Contato = () => {
     const ref = Animacao('hidden', 'fade-in');
     const ref2 = Animacao('zoom-in', 'zoom-in-active');
     return (
-        <section className="contato-section">
-            <h2 ref={ref} className="hidden contato-titulo"><span><FontAwesomeIcon icon={faHandshake}/></span> Contato</h2>
+        <section  className="contato-section">
+            <h2 id="contato" ref={ref} className="hidden contato-titulo"><span><FontAwesomeIcon icon={faHandshake}/></span> Contato</h2>
             <div ref={ref2} className="zoom-in contato-container">
                 <div className="contato-content1">
                     <div className="contato-text">

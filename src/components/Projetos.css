@@ -15,7 +15,7 @@
     text-align: center;
     font-size: 2.5em;
     padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -139,5 +139,9 @@
     .projeto-info .projeto-button button {
         padding: 5px 15px;
         font-size: 14px;
+    }
+
+    .contato-content2 {
+        padding: 20px
     }
 }

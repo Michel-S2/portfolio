@@ -45,8 +45,8 @@ export const Projetos = () => {
       };
 
     return (
-        <section className="projeto-section">
-            <div className="container-projetos">
+        <section  className="projeto-section">
+            <div id="projetos" className="container-projetos">
                 <h2 ref={ref} className="hidden"><span><FontAwesomeIcon icon={faPen} className="icon-pen"/></span> Projetos</h2>
                 <section className="projeto-area">
 
