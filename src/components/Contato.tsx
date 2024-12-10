@@ -51,12 +51,12 @@ export const Contato = () => {
                         <label htmlFor="input-name">Seu nome</label>
                         <div>
                             <span className="span-icon"><FontAwesomeIcon icon={faCircleInfo} className="span-icon-name"/></span>
-                            <input type="text" className="text-name" id="input-name" placeholder="Digite seu nome" required/>
+                            <input type="text" name="name" className="text-name" id="input-name" placeholder="Digite seu nome" required/>
                         </div>
                         <label htmlFor="input-email">Email</label>
                         <div>
                             <span className="span-icon"><FontAwesomeIcon icon={faEnvelope} className="span-icon-eamil"/></span>
-                            <input type="email" className="email-contato" id="input-email" placeholder="Digite seu e-mail" required/>
+                            <input type="email" name="email" className="email-contato" id="input-email" placeholder="Digite seu e-mail" required/>
                         </div>
                         <label htmlFor="input-message">Mensagem</label>
                         <textarea name="message" id="input-message" className="text-area-info" placeholder="Digite uma mensagem..."></textarea>
