@@ -15,10 +15,10 @@ type Props = {
     children: ReactNode;
 }
 
-export const TemaContextProvide = ({ children }: Props) => {
-    const [tema, setTema] = useState(() => {
-        return localStorage.getItem(STORAGE_kEY) || 'dark'
-    });
+export const TemaContextProvider = ({ children }: Props) => {
+    const [tema, setTema] = useState(
+        localStorage.getItem(STORAGE_kEY) || 'dark'
+    );
 
     useEffect(() => {
         localStorage.setItem(STORAGE_kEY, tema)
