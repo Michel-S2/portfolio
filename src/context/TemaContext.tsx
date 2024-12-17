@@ -16,9 +16,18 @@ type Props = {
 }
 
 export const TemaContextProvider = ({ children }: Props) => {
-    const [tema, setTema] = useState(
-        localStorage.getItem(STORAGE_kEY) || 'dark'
-    );
+    const [tema, setTema] = useState<string>('dark');
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const savedTheme = localStorage.getItem(STORAGE_kEY);
+
+            if (savedTheme) {
+                setTema(savedTheme);
+            }
+
+        }
+    }, [])
 
     useEffect(() => {
         localStorage.setItem(STORAGE_kEY, tema)
